@@ -15,6 +15,6 @@ public class ProductController {
 
     @GetMapping("/product")
     public Product product(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Product(counter.incrementAndGet(), String.format(template, name));
+        return new Product(counter.incrementAndGet(), "Hello, "+ name);
     }
 }
