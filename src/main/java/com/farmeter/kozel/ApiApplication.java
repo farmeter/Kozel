@@ -34,9 +34,9 @@ public class ApiApplication implements CommandLineRunner {
 	private void addSampleData() {
 		log.info("============== addSampleData");
 
-		productRepository.save(Product.builder().name("productName1").build());
-		productRepository.save(Product.builder().name("productName2").build());
-		productRepository.save(Product.builder().name("productName3").build());
+		productRepository.save(Product.builder().name("productName1").originPrice(100L).salePrice(50L).build());
+		productRepository.save(Product.builder().name("productName2").originPrice(100L).salePrice(50L).build());
+		productRepository.save(Product.builder().name("productName3").originPrice(100L).salePrice(50L).build());
 	}
 
 	private void viewSampleData() {
