@@ -1,6 +1,9 @@
 package com.farmeter.kozel;
 
 import java.util.List;
+import java.util.TimeZone;
+
+import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -23,27 +26,17 @@ public class ApiApplication implements CommandLineRunner {
 	}
 
 	@Autowired
-	ProductRepository productRepository;
+	SampleData sampleData;
+
+	@PostConstruct
+	void started() {
+		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Seoul"));
+		sampleData.doSample();
+	}
 
 	@Override
 	public void run(String... args) {
-		addSampleData();
-		viewSampleData();
-	}
-
-	private void addSampleData() {
-		log.info("============== addSampleData");
-
-		productRepository.save(Product.builder().name("productName1").originPrice(100L).salePrice(50L).build());
-		productRepository.save(Product.builder().name("productName2").originPrice(100L).salePrice(50L).build());
-		productRepository.save(Product.builder().name("productName3").originPrice(100L).salePrice(50L).build());
-	}
-
-	private void viewSampleData() {
-		log.info("============== viewSampleData");
-
-		List<Product> products = productRepository.findAll();
-		log.info("{}", CommonUtils.toJson(products));
+		sampleData.doSample();
 	}
 
 }
