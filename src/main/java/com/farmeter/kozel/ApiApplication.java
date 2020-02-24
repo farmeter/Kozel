@@ -1,6 +1,5 @@
 package com.farmeter.kozel;
 
-import java.util.List;
 import java.util.TimeZone;
 
 import javax.annotation.PostConstruct;
@@ -8,15 +7,11 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 
-import com.farmeter.kozel.entity.Product;
-import com.farmeter.kozel.repository.ProductRepository;
-import com.farmeter.kozel.util.CommonUtils;
+import com.farmeter.kozel.config.SampleData;
 
 @SpringBootApplication
 @Slf4j
@@ -26,7 +21,7 @@ public class ApiApplication implements CommandLineRunner {
 	}
 
 	@Autowired
-	SampleData sampleData;
+    SampleData sampleData;
 
 	@PostConstruct
 	void started() {

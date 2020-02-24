@@ -1,4 +1,4 @@
-package com.farmeter.kozel;
+package com.farmeter.kozel.config;
 
 import java.util.Arrays;
 
@@ -35,9 +35,13 @@ public class SampleData {
         cateogoryRepository.save(Category.builder().categoryName("food").build());
         cateogoryRepository.save(Category.builder().categoryName("sports").build());
 
-        productRepository.save(Product.builder().name("productName1").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(1L,2L)).build());
-        productRepository.save(Product.builder().name("productName2").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(2L,3L)).build());
-        productRepository.save(Product.builder().name("productName3").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(1L,2L,3L)).build());
+//        productRepository.save(Product.builder().name("productName1").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(1L,2L)).build());
+//        productRepository.save(Product.builder().name("productName2").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(2L,3L)).build());
+//        productRepository.save(Product.builder().name("productName3").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(1L,2L,3L)).build());
+
+        productRepository.save(Product.builder().name("productName1").originPrice(100L).salePrice(50L).build());
+        productRepository.save(Product.builder().name("productName2").originPrice(100L).salePrice(50L).build());
+        productRepository.save(Product.builder().name("productName3").originPrice(100L).salePrice(50L).build());
 
     }
 

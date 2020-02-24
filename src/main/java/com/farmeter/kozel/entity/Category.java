@@ -1,8 +1,12 @@
 package com.farmeter.kozel.entity;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -15,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TB_Category")
+@Table(name = "Category")
 public class Category {
 
     @Id
@@ -23,4 +27,9 @@ public class Category {
     private Long categoryNo;
 
     private String categoryName;
+
+    @OneToMany
+    @JoinColumn(name = "productNo")
+    private List<CategoryMapping> categoryProductMappings;
+
 }
