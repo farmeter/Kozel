@@ -35,7 +35,8 @@ public class Product extends Auditable {
 
     private Long salePrice;
 
-//    @OneToMany
+    @OneToMany(mappedBy = "productNo")
 //    @JoinColumn(name = "productNo")
-//    private List<CategoryProductMapping> categoryProductMappings;
+    private List<CategoryMapping> categoryMappings;
+
 }
