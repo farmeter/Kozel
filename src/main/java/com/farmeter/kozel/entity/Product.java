@@ -36,7 +36,6 @@ public class Product extends Auditable {
     private Long salePrice;
 
     @OneToMany(mappedBy = "productNo")
-//    @JoinColumn(name = "productNo")
     private List<CategoryMapping> categoryMappings;
 
 }
