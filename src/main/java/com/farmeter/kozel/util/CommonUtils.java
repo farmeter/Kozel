@@ -13,7 +13,7 @@ public class CommonUtils {
 
     public static String toJson(Object object) {
         try {
-            return mapper.writeValueAsString(object);
+            return object == null ? mapper.writeValueAsString(object) : null;
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
