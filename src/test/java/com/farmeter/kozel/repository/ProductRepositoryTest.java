@@ -24,7 +24,7 @@ public class ProductRepositoryTest extends AbstractBaseTest {
     }
 
     @Test
-    public void findallTest() {
+    public void findAllTest() {
         System.out.println("===findallTest start");
         System.out.println(CommonUtils.toJson(productRepository.findAll()));
     }

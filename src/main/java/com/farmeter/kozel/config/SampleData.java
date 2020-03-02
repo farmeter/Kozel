@@ -1,6 +1,7 @@
 package com.farmeter.kozel.config;
 
 import java.util.Arrays;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -47,8 +48,16 @@ public class SampleData {
 
     public void viewSampleData() {
         log.info("============== viewSampleData");
-        cateogoryRepository.findAll().forEach(c -> log.info("{}", CommonUtils.toJson(c)));
-        productRepository.findAll().forEach(p -> log.info("{}", CommonUtils.toJson(p)));
+
+//        log.info("============== viewSampleData" + cateogoryRepository.findAll().size());
+//        log.info("============== viewSampleData" + cateogoryRepository.findAll().get(0).getCategoryNo());
+
+        List<Category> categoryList =  cateogoryRepository.findAll();
+        categoryList.forEach(c -> {
+            log.info("{}",c);
+//            log.info("{}", CommonUtils.toJson(c));
+        });
+//        productRepository.findAll().forEach(p -> log.info("{}", CommonUtils.toJson(p)));
     }
 
 }

@@ -31,7 +31,7 @@ public class ApiApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
-		sampleData.doSample();
+
 	}
 
 }

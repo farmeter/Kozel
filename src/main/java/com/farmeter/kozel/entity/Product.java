@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -35,7 +36,7 @@ public class Product extends Auditable {
 
     private Long salePrice;
 
-    @OneToMany(mappedBy = "productNo")
+    @OneToMany(mappedBy = "productNo", fetch = FetchType.LAZY)
     private List<CategoryMapping> categoryMappings;
 
 }
