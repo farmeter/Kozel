@@ -14,12 +14,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Builder
 @Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString(exclude = "categoryMappings")
 @Table(name = "Category")
 public class Category {
 
@@ -30,6 +32,6 @@ public class Category {
     private String categoryName;
 
     @OneToMany(mappedBy = "categoryNo", fetch = FetchType.LAZY)
-    private List<CategoryMapping> categoryProductMappings;
+    private List<CategoryMapping> categoryMappings;
 
 }

@@ -29,16 +29,12 @@ public class SampleData {
         viewSampleData();
     }
 
-    public void addSampleData() {
+    private void addSampleData() {
         log.info("============== addSampleData");
 
         cateogoryRepository.save(Category.builder().categoryName("beauty").build());
         cateogoryRepository.save(Category.builder().categoryName("food").build());
         cateogoryRepository.save(Category.builder().categoryName("sports").build());
-
-//        productRepository.save(Product.builder().name("productName1").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(1L,2L)).build());
-//        productRepository.save(Product.builder().name("productName2").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(2L,3L)).build());
-//        productRepository.save(Product.builder().name("productName3").originPrice(100L).salePrice(50L).categoryNos(Arrays.asList(1L,2L,3L)).build());
 
         productRepository.save(Product.builder().name("productName1").originPrice(100L).salePrice(50L).build());
         productRepository.save(Product.builder().name("productName2").originPrice(100L).salePrice(50L).build());
@@ -48,16 +44,8 @@ public class SampleData {
 
     public void viewSampleData() {
         log.info("============== viewSampleData");
-
-//        log.info("============== viewSampleData" + cateogoryRepository.findAll().size());
-//        log.info("============== viewSampleData" + cateogoryRepository.findAll().get(0).getCategoryNo());
-
-        List<Category> categoryList =  cateogoryRepository.findAll();
-        categoryList.forEach(c -> {
-            log.info("{}",c);
-//            log.info("{}", CommonUtils.toJson(c));
-        });
-//        productRepository.findAll().forEach(p -> log.info("{}", CommonUtils.toJson(p)));
+        cateogoryRepository.findAll().forEach(c -> log.info("{}", c));
+        productRepository.findAll().forEach(p -> log.info("{}", p));
     }
 
 }
