@@ -1,8 +1,5 @@
 package com.farmeter.kozel.config;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +9,6 @@ import com.farmeter.kozel.entity.Category;
 import com.farmeter.kozel.entity.Product;
 import com.farmeter.kozel.repository.CateogoryRepository;
 import com.farmeter.kozel.repository.ProductRepository;
-import com.farmeter.kozel.util.CommonUtils;
 
 @Slf4j
 @Component
