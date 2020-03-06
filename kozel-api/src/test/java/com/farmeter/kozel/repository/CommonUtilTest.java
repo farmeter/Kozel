@@ -1,7 +1,6 @@
 package com.farmeter.kozel.repository;
 
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import lombok.extern.slf4j.Slf4j;
 
