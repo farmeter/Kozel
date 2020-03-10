@@ -1,1 +1,3 @@
 rootProject.name = 'kozel'
+
+include 'kozel-api'
