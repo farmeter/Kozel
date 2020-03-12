@@ -4,30 +4,37 @@ plugins {
 	id 'java'
 }
 
+//buildscript {
+//	repositories {
+//		mavenCentral()
+//	}
+//	dependencies {
+//		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.4.RELEASE")
+//		classpath "io.spring.gradle:dependency-management-plugin:1.0.9.RELEASE"
+//	}
+//}
+
 allprojects {
 	group = 'com.farmeter.kozel'
 	version = '0.0.1-SNAPSHOT'
 }
 
-//configurations {
-//	developmentOnly
-//	runtimeClasspath {
-//		extendsFrom developmentOnly
-//	}
-//	compileOnly {
-//		extendsFrom annotationProcessor
-//	}
+//repositories {
+//	mavenCentral()
 //}
 
-repositories {
-	mavenCentral()
+bootJar {
+	enabled = false
+}
+jar {
+	enabled = true
 }
 
-//dependencies {
+dependencies {
 //	implementation 'org.springframework.boot:spring-boot-starter-batch'
-//	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 //
 ////	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 //	annotationProcessor 'org.projectlombok:lombok'
@@ -38,7 +45,7 @@ repositories {
 //	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
 //	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 //
-//}
+}
 
 subprojects {
 	apply plugin: 'java'
@@ -47,14 +54,19 @@ subprojects {
 
 	sourceCompatibility = '11'
 
+	repositories {
+		mavenCentral()
+	}
+
+
 	dependencies {
 
 	}
 }
 
-project('kozel-api') {
-
-}
+//project('kozel-api') {
+//
+//}
 
 
 //test {
