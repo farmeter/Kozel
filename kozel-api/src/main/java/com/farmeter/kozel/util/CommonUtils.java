@@ -13,11 +13,12 @@ public class CommonUtils {
     private static ObjectMapper mapper = new ObjectMapper();
 
     public static String toJson(Object object) {
-        try {
-            return object != null ? mapper.writeValueAsString(object) : null;
-        } catch (JsonProcessingException e) {
-            log.error("CommonUtils.mapper error : {}", e.getMessage());
-        }
+        //FIXME
+//        try {
+//            return object != null ? mapper.writeValueAsString(object) : null;
+//        } catch (JsonProcessingException e) {
+//            log.error("CommonUtils.mapper error : {}", e.getMessage());
+//        }
         return null;
     }
 }
