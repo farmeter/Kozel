@@ -5,21 +5,11 @@ plugins {
 }
 
 ext {
-//	springBootVersion = '1.4.2.RELEASE'
+	springBootVersion = '2.2.4.RELEASE'
 	slf4jVersion = '1.7.21'
 	log4j2Version = '2.5'
 	commonsLogging = '1.2'
 }
-
-//buildscript {
-//	repositories {
-//		mavenCentral()
-//	}
-//	dependencies {
-//		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.4.RELEASE")
-//		classpath "io.spring.gradle:dependency-management-plugin:1.0.9.RELEASE"
-//	}
-//}
 
 allprojects {
 	group = 'com.farmeter.kozel'
@@ -35,19 +25,6 @@ bootJar {
 }
 jar {
 	enabled = true
-}
-
-dependencies {
-//	implementation 'org.springframework.boot:spring-boot-starter-batch'
-//	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//	implementation 'org.springframework.boot:spring-boot-starter-web'
-
-//	implementation 'org.springframework.boot:spring-boot-devtools'
-//	annotationProcessor 'org.projectlombok:lombok'
-//	compile("org.hsqldb:hsqldb")
-//	compileOnly 'org.projectlombok:lombok'
-
 }
 
 subprojects {
@@ -81,22 +58,10 @@ subprojects {
 		compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
 		compile group: 'ch.qos.logback', name: 'logback-classic', version:  '1.1.7'
 
-
-
-
 		testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
 		testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 
 		testCompile group: 'junit', name: 'junit', version: '4.12'
 		testCompile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
-
 	}
 }
-
-//project('kozel-api') {
-//
-//}
-
-//test {
-//	useJUnitPlatform()
-//}
