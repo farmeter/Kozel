@@ -11,7 +11,4 @@ gradle build
 ...
 
 ## to-do
-
-gradle build fail
-gradle multi project
-npm start fail
+- npm start fail
