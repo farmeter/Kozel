@@ -3,14 +3,11 @@ package com.farmeter.kozel.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import lombok.extern.slf4j.Slf4j;
-
 import com.farmeter.kozel.entity.Category;
 import com.farmeter.kozel.entity.Product;
 import com.farmeter.kozel.repository.CateogoryRepository;
 import com.farmeter.kozel.repository.ProductRepository;
 
-@Slf4j
 @Component
 public class SampleData {
 
@@ -26,7 +23,7 @@ public class SampleData {
     }
 
     private void addSampleData() {
-        log.info("============== addSampleData");
+        System.out.println("============== addSampleData");
 
         cateogoryRepository.save(Category.builder().categoryName("beauty").build());
         cateogoryRepository.save(Category.builder().categoryName("food").build());
@@ -39,9 +36,9 @@ public class SampleData {
     }
 
     public void viewSampleData() {
-        log.info("============== viewSampleData");
-        cateogoryRepository.findAll().forEach(c -> log.info("{}", c));
-        productRepository.findAll().forEach(p -> log.info("{}", p));
+        System.out.println("============== viewSampleData");
+        cateogoryRepository.findAll().forEach(c -> System.out.println(c));
+        productRepository.findAll().forEach(p -> System.out.println(p));
     }
 
 }
