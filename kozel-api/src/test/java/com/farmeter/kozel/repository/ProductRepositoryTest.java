@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.farmeter.kozel.AbstractBaseTest;
-import com.farmeter.kozel.config.SampleData;
+import com.farmeter.kozel.sample.SampleData;
 import com.farmeter.kozel.entity.Product;
 import com.farmeter.kozel.util.CommonUtils;
 

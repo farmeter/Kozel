@@ -30,7 +30,5 @@ public class Category {
 
     private String categoryName;
 
-    @OneToMany(mappedBy = "categoryNo", fetch = FetchType.LAZY)
-    private List<CategoryMapping> categoryMappings;
 
 }
