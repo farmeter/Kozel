@@ -1,23 +1,19 @@
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile 'org.springframework.boot:spring-boot-starter-web'
-
-    runtime('com.h2database:h2')
+    compile("org.hsqldb:hsqldb")
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
-
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 
-    //LOMBOK Dependencies
+    // LOMBOK
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    
     testAnnotationProcessor 'org.projectlombok:lombok'
     testCompile 'org.projectlombok:lombok'
     testImplementation 'org.projectlombok:lombok'
-
-
-
 
 }

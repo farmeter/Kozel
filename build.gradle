@@ -32,16 +32,9 @@ subprojects {
 	}
 
 	dependencies {
-		annotationProcessor 'org.projectlombok:lombok'
-
-		compileOnly 'org.projectlombok:lombok'
-		compile("org.hsqldb:hsqldb")
-
 		compile group: 'org.springframework', name: 'spring-web', version: '5.2.4.RELEASE'
 		compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
 		compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.2.5.RELEASE'
 		compile group: 'org.springframework.data', name: 'spring-data-commons', version: '2.2.5.RELEASE'
-
-
 	}
 }
