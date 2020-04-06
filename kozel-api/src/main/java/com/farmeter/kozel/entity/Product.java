@@ -1,5 +1,7 @@
 package com.farmeter.kozel.entity;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -31,5 +33,6 @@ public class Product extends Auditable {
 
     private Long salePrice;
 
+    private List<Long> categoryIds;
 
 }
