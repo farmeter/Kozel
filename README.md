@@ -2,15 +2,17 @@
 Simple Commerce Web Project by farmeter
 
 ## Environment
-Jdk 11
+Jdk 11, React
 
-## Build & Run
+## Build
 ```
 gradle build
 ```
+
+## Run
+````
+cd kozel-web
+yarn start
 ...
 
 ## To-do
-- npm start fail
-- github Security Alerts
-- gradle.build duplicates 
