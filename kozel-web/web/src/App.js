@@ -6,7 +6,7 @@ class App extends Component {
     render() {
         return (
             <TodoListTemplate form={<Form/>}>
-                템플릿 완성
+                <TodoItemList/>
             </TodoListTemplate>
         );
     }
