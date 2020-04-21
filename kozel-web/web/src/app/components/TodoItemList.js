@@ -7,9 +7,9 @@ class TodoItemList extends Component {
 
         return (
             <div>
-                <TodoItem text="안녕"/>
-                <TodoItem text="리액트"/>
-                <TodoItem text="반가워"/>
+                <TodoItem text="hello"/>
+                <TodoItem text="2"/>
+                <TodoItem text="3"/>
             </div>
         );
     }

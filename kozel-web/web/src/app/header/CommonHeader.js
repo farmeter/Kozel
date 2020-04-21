@@ -1,20 +1,20 @@
 import React from 'react';
-import '../style/TodoListTemplate.css';
+import '../style/CommonHeader.css';
 
-const TodoListTemplate = ({form, children}) => {
+const CommonHeader = ({form, children}) => {
     return (
-        <main className="todo-list-template">
+        <main className="header-list-template">
             <div className="title">
-                오늘 할 일
+                Header
             </div>
             <section className="form-wrapper">
                 {form}
             </section>
-            <section className="todos-wrapper">
+            <section className="items-wrapper">
                 { children }
             </section>
         </main>
     );
 };
 
-export default TodoListTemplate;
+export default CommonHeader;
