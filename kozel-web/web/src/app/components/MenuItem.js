@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../style/TodoItem.css';
+import '../style/MenuItem.css';
 
-class TodoItem extends Component {
+class MenuItem extends Component {
     render() {
         const { text, checked, id, onToggle, onRemove } = this.props;
 
@@ -22,4 +22,4 @@ class TodoItem extends Component {
     }
 }
 
-export default TodoItem;
+export default MenuItem;

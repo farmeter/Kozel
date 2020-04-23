@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CommonHeader from './header/CommonHeader';
 import Form from './components/Form';
-import TodoItemList from './components/TodoItemList';
+import MenuItemList from './components/MenuItemList';
 
 
 class App extends Component {
@@ -60,7 +60,7 @@ class App extends Component {
                     // onCreate={handleCreate}
                 />
             )}>
-                <TodoItemList/>
+                <MenuItemList/>
             </CommonHeader>
         );
     }
