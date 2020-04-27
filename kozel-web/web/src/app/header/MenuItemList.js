@@ -7,9 +7,9 @@ class MenuItemList extends Component {
 
         return (
             <div>
-                <MenuItem text="hello"/>
-                <MenuItem text="2"/>
-                <MenuItem text="3"/>
+                <MenuItem text="Home"/>
+                <MenuItem text="List"/>
+                <MenuItem text="My"/>
             </div>
         );
     }

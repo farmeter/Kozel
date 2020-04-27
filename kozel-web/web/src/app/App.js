@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CommonHeader from './header/CommonHeader';
 import Form from './components/Form';
-import MenuItemList from './components/MenuItemList';
+import MenuItemList from './header/MenuItemList';
 
 
 class App extends Component {
