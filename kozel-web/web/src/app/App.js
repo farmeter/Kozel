@@ -47,7 +47,7 @@ class App extends Component {
         const {
             handleChange,
             handleCreate,
-            handleKeyPress
+            handleKeyPress,
         } = this;
 
         return (
