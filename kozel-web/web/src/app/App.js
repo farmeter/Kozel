@@ -17,12 +17,14 @@ class App extends Component {
     }
 
     handleChange = (e) => {
+        console.log("handleChange : " + e);
         this.setState({
             input: e.target.value // input 의 다음 바뀔 값
         });
     }
 
     handleCreate = () => {
+        console.log("handleCreate");
         const { input, todos } = this.state;
         this.setState({
             input: '', // 인풋 비우고
@@ -36,6 +38,7 @@ class App extends Component {
     }
 
     handleKeyPress = (e) => {
+        console.log("handleKeyPress : " + e);
         // 눌려진 키가 Enter 면 handleCreate 호출
         if(e.key === 'Enter') {
             this.handleCreate();
