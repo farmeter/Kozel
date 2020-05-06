@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/CommonHeader.css';
+import './style/CommonHeader.css';
 
 const CommonHeader = ({form, children}) => {
     return (
