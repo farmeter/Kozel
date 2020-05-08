@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CommonHeader from './header/CommonHeader';
 import Form from './components/Form';
 import MenuItemList from './header/MenuItemList';
+// import Product from './product/Product';
 
 class App extends Component {
 
@@ -54,16 +55,19 @@ class App extends Component {
         } = this;
 
         return (
-            <CommonHeader form={(
-                <Form
-                    value={input}
-                    onKeyPress={handleKeyPress}
-                    onChange={handleChange}
-                    onCreate={handleCreate}
-                />
-            )}>
-                <MenuItemList/>
-            </CommonHeader>
+            <>
+                <CommonHeader form={(
+                    <Form
+                        value={input}
+                        onKeyPress={handleKeyPress}
+                        onChange={handleChange}
+                        onCreate={handleCreate}
+                    />
+                )}>
+                    <MenuItemList/>
+                </CommonHeader>
+                {/*<Product />*/}
+            </>
         );
     }
 }

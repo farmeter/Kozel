@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../header/style/MenuItem.css';
 
-class MenuItem extends Component {
+class Product extends Component {
     render() {
         const { text, checked, id, onRemove } = this.props;
 
@@ -11,7 +11,7 @@ class MenuItem extends Component {
         }
 
         return (
-            <div className="menu-item" onClick={() => onToggle(id)}>
+            <div className="product" onClick={() => onToggle(id)}>
                 <div className={`menu-text ${checked && 'checked'}`}>
                     <div>{text}</div>
                 </div>
@@ -20,4 +20,4 @@ class MenuItem extends Component {
     }
 }
 
-export default ItemList;
+export default Product;
