@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import CommonHeader from './header/CommonHeader';
+import CommonHeader from './CommonHeader';
 import Form from '../components/Form';
-import MenuItemList from './header/MenuItemList';
+import MenuItemList from './MenuItemList';
 // import Product from './product/Product';
 
-class App extends Component {
+class Header extends Component {
 
     // id = 3 // 이미 0,1,2 가 존재하므로 3으로 설정
 
@@ -72,4 +72,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Header;
