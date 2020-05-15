@@ -1,8 +1,26 @@
 import React, { Component } from 'react';
-import CommonHeader from './CommonHeader';
+// import CommonHeader from './CommonHeader';
 import Form from '../components/Form';
 import MenuItemList from './MenuItemList';
 // import Product from './product/Product';
+
+import './style/CommonHeader.css';
+
+const CommonHeader = ({form, children}) => {
+    return (
+        <main className="header-list-template">
+            <div className="title">
+                Header
+            </div>
+            <section className="form-wrapper">
+                {form}
+            </section>
+            <section className="items-wrapper">
+                { children }
+            </section>
+        </main>
+    );
+};
 
 class Header extends Component {
 
