@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-// import CommonHeader from './CommonHeader';
 import Form from '../components/Form';
 import MenuItemList from './MenuItemList';
-// import Product from './product/Product';
 
 import './style/CommonHeader.css';
 
@@ -84,7 +82,6 @@ class Header extends Component {
                 )}>
                     <MenuItemList/>
                 </CommonHeader>
-                {/*<Product />*/}
             </>
         );
     }
