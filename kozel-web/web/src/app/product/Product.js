@@ -10,11 +10,13 @@ class Product extends Component {
             console.log(e);
         }
 
+        const sampleElements = ['one', 'two', 'three'];
+
         return (
             <div className="product" onClick={() => onToggle(id)}>
-                <div className={`menu-text ${checked && 'checked'}`}>
-                    <div>{text}</div>
-                </div>
+                {elements.map((value, index) => {
+                    return <div key={index}>{value}</div>
+                })}
             </div>
         );
     }
