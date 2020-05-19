@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Form from '../components/Form';
-import MenuItemList from './MenuItemList';
+// import SearchItemList from './SearchItemList';
+// import MenuItem from './MenuItem';
+import Menu from './menu/Menu'
 
 import './style/CommonHeader.css';
 
@@ -80,7 +82,9 @@ class Header extends Component {
                         onCreate={handleCreate}
                     />
                 )}>
-                    <MenuItemList/>
+                    <Menu/>
+                    {/*<SearchItemList/>*/}
+                    {/*<MenuItem text="Home"/>*/}
                 </CommonHeader>
             </>
         );

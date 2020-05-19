@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import MenuItem from './MenuItem';
+import MenuItem from './SearchItem';
 
-class MenuItemList extends Component {
+class SearchItemList extends Component {
     render() {
         const { todos, onToggle, onRemove } = this.props;
+
+        const sampleElements = ['Home', 'List', 'My'];
 
         return (
             <div>
@@ -15,4 +17,4 @@ class MenuItemList extends Component {
     }
 }
 
-export default MenuItemList;
+export default SearchItemList;

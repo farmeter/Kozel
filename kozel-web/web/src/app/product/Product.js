@@ -14,7 +14,7 @@ class Product extends Component {
 
         return (
             <div className="product" onClick={() => onToggle(id)}>
-                {elements.map((value, index) => {
+                {sampleElements.map((value, index) => {
                     return <div key={index}>{value}</div>
                 })}
             </div>
