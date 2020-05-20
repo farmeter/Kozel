@@ -5,13 +5,13 @@ class SearchItemList extends Component {
     render() {
         const { todos, onToggle, onRemove } = this.props;
 
-        const sampleElements = ['Home', 'List', 'My'];
+        const menus = ['Home', 'List', 'My' ,'Qna'];
 
         return (
             <div>
-                <MenuItem text="Home"/>
-                <MenuItem text="List"/>
-                <MenuItem text="My"/>
+                {menus.map((value, index) => {
+                    return <MenuItem key={index} text={value}/>
+                })}
             </div>
         );
     }

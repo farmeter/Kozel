@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../header/style/MenuItem.css';
+import { getProductList } from '../sample/sampleData'
 
 class Product extends Component {
     render() {
@@ -10,11 +11,11 @@ class Product extends Component {
             console.log(e);
         }
 
-        const sampleElements = ['one', 'two', 'three'];
+        const productList = getProductList();
 
         return (
             <div className="product" onClick={() => onToggle(id)}>
-                {sampleElements.map((value, index) => {
+                {productList.map((value, index) => {
                     return <div key={index}>{value}</div>
                 })}
             </div>
