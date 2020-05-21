@@ -6,17 +6,17 @@ class Product extends Component {
     render() {
         const { text, checked, id, onRemove } = this.props;
 
-        const onToggle = (e) => {
-            console.log("MenuItem onToggle");
+        const onClick = (e) => {
+            console.log("Product onToggle");
             console.log(e);
         }
 
         const productList = getProductList();
 
         return (
-            <div className="product" onClick={() => onToggle(id)}>
+            <div className="product" >
                 {productList.map((value, index) => {
-                    return <div key={index}>{value}</div>
+                    return <div key={index} onClick={() => onClick(value)}>{value}</div>
                 })}
             </div>
         );
