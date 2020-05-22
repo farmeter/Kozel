@@ -1,5 +1,7 @@
 package com.farmeter.kozel.rest;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,5 +19,10 @@ public class ProductController {
     @GetMapping("/product/{id}")
     public Product product(@PathVariable(value = "id") Long productId) {
         return productRepository.findById(productId).orElse(null);
+    }
+
+    @GetMapping("/products")
+    public List<Product> products() {
+        return productRepository.findAll();
     }
 }
