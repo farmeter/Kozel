@@ -21,7 +21,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@ToString(exclude = "categoryMappings")
+//@ToString(exclude = "categoryMappings")
 @Table(name = "Product")
 public class Product extends Auditable {
     @Id
