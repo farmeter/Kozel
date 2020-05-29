@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import com.farmeter.kozel.entity.Category;
 import com.farmeter.kozel.entity.Product;
-import com.farmeter.kozel.repository.CateogoryRepository;
+import com.farmeter.kozel.repository.CategoryRepository;
 import com.farmeter.kozel.repository.ProductRepository;
 
 @Component
@@ -15,7 +15,7 @@ public class SampleData {
     ProductRepository productRepository;
 
     @Autowired
-    CateogoryRepository cateogoryRepository;
+    CategoryRepository cateogoryRepository;
 
     public void doSample() {
         addSampleData();
