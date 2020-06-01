@@ -34,7 +34,6 @@ public class Product extends Auditable {
 
     private Long salePrice;
 
-    //TODO
     @Transient
     private List<Long> categoryIds;
 
