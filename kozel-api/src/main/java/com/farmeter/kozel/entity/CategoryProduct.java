@@ -3,7 +3,9 @@ package com.farmeter.kozel.entity;
 import java.util.List;
 
 import javax.persistence.Column;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -12,13 +14,14 @@ import lombok.Data;
 @Table(name = "CategoryProduct")
 public class CategoryProduct {
 
-    @ManyToOne
+    @OneToOne
     @Column(name = "productNo")
-    private List<Product> products;
+    private Product product;
 
-    @ManyToOne
-    @Column(name = "categoryNo")
-    private List<Category> Categories;
+    @OneToOne
+//    @Column(name = "categoryNo")
+//    @JoinColumn(map)
+    private Category Category;
 
     //TODO
 
