@@ -10,15 +10,15 @@ gradle build
 ```
 
 ## Run
-````
+```
 $ cd kozel-web
 $ yarn start
-...
+```
 
-````
+```
 $ cd kozel-api
 $ gradle bootRun
-...
+```
 
 
 ## To-do
