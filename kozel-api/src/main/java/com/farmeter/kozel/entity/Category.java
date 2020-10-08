@@ -30,9 +30,9 @@ public class Category {
     @Column(name = "categoryName")
     private String categoryName;
 
-    //TODO
+    //FIXME
 //    @OneToMany
 //    @Column(name = "")
-    private List<CategoryProduct> categoryProductList;
+//    private List<CategoryProduct> categoryProductList;
 
 }
