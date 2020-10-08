@@ -22,6 +22,4 @@ $ gradle bootRun
 
 
 ## To-do
-# h3
-
-
+test db
