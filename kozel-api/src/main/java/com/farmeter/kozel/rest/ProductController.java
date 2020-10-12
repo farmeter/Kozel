@@ -17,7 +17,7 @@ import com.farmeter.kozel.repository.ProductRepository;
 public class ProductController {
 
     @Autowired
-    ProductRepository productRepository;
+    private ProductRepository productRepository;
 
     @GetMapping("/product/{id}")
     public Product product(@PathVariable(value = "id") Long productId) {
