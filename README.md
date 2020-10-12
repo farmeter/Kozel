@@ -20,6 +20,9 @@ $ cd kozel-api
 $ gradle bootRun
 ```
 
+using Intellij 
+ - check "Project Structure > Project SDK, Project Language Level"
+ - check "Preference > Build.. > Build Tools > Gradle > Gradle JVM"
 
 ## To-do
 test db
