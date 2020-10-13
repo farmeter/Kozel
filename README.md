@@ -25,4 +25,5 @@ using Intellij
  - check "Preference > Build.. > Build Tools > Gradle > Gradle JVM"
 
 ## To-do
-test db
+- test db
+- front ui
