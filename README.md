@@ -16,11 +16,15 @@ gradle build
 $ cd web
 $ npm install
 $ npm run start:dev
+
+Launch http://localhost:3000
 ```
 
 ```
 $ cd kozel-api
 $ gradle bootRun
+
+Launch http://localhost:8080
 ```
 
 using Intellij 
