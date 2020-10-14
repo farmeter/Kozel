@@ -2,7 +2,8 @@
 Simple Commerce Web Project by farmeter
 
 ## Environment
-Jdk 11, React
+- API : Jdk 11, React
+- Frontend : from https://github.com/pankod/next-boilerplate
 
 ## Build
 ```
@@ -11,8 +12,10 @@ gradle build
 
 ## Run
 ```
-$ cd kozel-web
-$ yarn start
+()
+$ cd web
+$ npm install
+$ npm run start:dev
 ```
 
 ```
