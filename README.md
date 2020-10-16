@@ -12,7 +12,7 @@ gradle build
 
 ## Run
 ```
-()
+(frontend)
 $ cd web
 $ npm install
 $ npm run start:dev
@@ -21,6 +21,7 @@ Launch http://localhost:3000
 ```
 
 ```
+(api)
 $ cd kozel-api
 $ gradle bootRun
 
