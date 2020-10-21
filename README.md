@@ -3,7 +3,7 @@ Simple Commerce Web Project by farmeter
 
 ## Environment
 - API : Jdk 11, React
-- Frontend : from https://github.com/pankod/next-boilerplate
+- Frontend : from https://github.com/dasmikko/simple-react-template
 
 ## Build
 ```
