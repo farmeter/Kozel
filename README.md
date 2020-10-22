@@ -14,8 +14,8 @@ gradle build
 ```
 (frontend)
 $ cd web
-$ yarn install
-$ yarn start
+$ npm install
+$ npm run start
 
 Launch http://localhost:3000
 ```
