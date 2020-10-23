@@ -7,7 +7,7 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <h1 className="title">Simple React Template</h1>
+                <h1 className="title">Simple React Header</h1>
             </header>
         )
     }
