@@ -7,6 +7,8 @@ import styles from './styles'
 import Routes from './routes';
 import store from "./store";
 
+console.log("===here is start111===");
+
 class App extends Component {
     render() {
         return (

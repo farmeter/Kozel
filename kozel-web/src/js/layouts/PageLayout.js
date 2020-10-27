@@ -5,6 +5,8 @@ import { connect } from 'react-redux'
 // Layout
 import Header from '../components/Header';
 
+console.log("===here is start 333===");
+
 class PageLayout extends Component {
     render() {
         return (

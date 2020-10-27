@@ -11,6 +11,7 @@ import PageLayout from './layouts/PageLayout';
 // Pages
 import PageHome from './pages/Home';
 
+console.log("===here is start 222===");
 
 class Routes extends Component {
     render() {
