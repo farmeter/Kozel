@@ -6,9 +6,17 @@ const getGoogle = () => {
     });
 }
 
+const getCategory = (categoryNo) => {
+    //TODO cateogryNo
+
+    request('/api/categories', function (error, response, body) {
+        return response;
+    });
+}
+
 
 request.get({uri:"http://www.google.com"}, function (error, response, body) {
     //callback
 });
 
-export { getGoogle };
+export { getGoogle, getCategory };
