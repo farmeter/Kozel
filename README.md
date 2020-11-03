@@ -28,11 +28,13 @@ $ gradle bootRun
 Launch http://localhost:8080
 ```
 
-using Intellij 
+### using Intellij 
  - check "Project Structure > Project SDK, Project Language Level"
  - check "Preference > Build.. > Build Tools > Gradle > Gradle JVM"
 
 ## To-do
+Api
 - test db
+Front
 - front ui
 
