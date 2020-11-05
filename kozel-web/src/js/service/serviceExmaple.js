@@ -6,17 +6,17 @@ const getGoogle = () => {
     });
 }
 
-const getCategory = (categoryNo) => {
+const getSampleEmployees = (categoryNo) => {
     //TODO cateogryNo
 
-    request('/api/categories', function (error, response, body) {
+    request('http://dummy.restapiexample.com/api/v1/employees', function (error, response, body) {
         return response;
     });
 }
 
 
-request.get({uri:"http://www.google.com"}, function (error, response, body) {
-    //callback
-});
+// request.get({uri:"http://www.google.com"}, function (error, response, body) {
+//     //callback
+// });
 
-export { getGoogle, getCategory };
+export { getGoogle, getSampleEmployees };
