@@ -7,6 +7,10 @@ import Header from '../components/Header';
 
 console.log("===here is start 333===");
 
+const click = () => {
+    console.log("this is click");
+}
+
 class PageLayout extends Component {
     render() {
         return (
@@ -15,6 +19,7 @@ class PageLayout extends Component {
                 <div className="pageContent">
                     {this.props.children}
                 </div>
+                <input type={button} onClick={this.click} />?
             </div>
         )
     }
